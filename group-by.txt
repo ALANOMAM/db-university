@@ -1,1 +1,4 @@
 1. Contare quanti iscritti ci sono stati ogni anno
+SELECT COUNT(`id`) AS 'numer of enrolments' , YEAR(`enrolment_date`) AS 'years of enrolments'
+FROM `students`
+GROUP BY YEAR(`enrolment_date`);
